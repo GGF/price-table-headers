@@ -23,10 +23,10 @@ $(document).ready(function(){
     */
     function fixhead(index,fix) {
         if (fix) {
-            $('tr#name_col'+index+' *').css('position','sticky').css('top','40px');
+            $('tr#name_col'+index+'>*').css('position','sticky').css('top','40px');
             return false;
         } else {
-            $('tr#name_col'+index+' *').css('position','').css('top','');
+            $('tr#name_col'+index+'>*').css('position','').css('top','');
             return true;
         }
     }
